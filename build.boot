@@ -20,7 +20,7 @@
   (comp
     (watch)
     (speak)
-    (hoplon)
+;    (hoplon)
     (reload)
     (cljs)
     (serve :port 8000)))
@@ -29,6 +29,6 @@
   "Build hoplon-test for production deployment."
   []
   (comp
-    (hoplon)
+;    (hoplon)
     (cljs :optimizations :advanced)
     (target :dir #{"target"})))

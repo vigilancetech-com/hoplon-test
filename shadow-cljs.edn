@@ -1,0 +1,24 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[refactor-nrepl "2.4.0"]
+  [cider/cider-nrepl "0.19.0-SNAPSHOT"]]
+
+ :builds
+ {:main
+  {:target :node-script
+   :output-to "public/main.js"
+   :main guardian.main/main}
+
+  :renderer
+  {:target :browser
+   :output-dir "public/js"
+   :asset-path "js"
+
+   :modules
+   {:renderer {:entries [electron.renderer]}}
+   :devtools
+   {:before-load guardian.renderer/stop
+    :after-load guardian.renderer/start}}}}

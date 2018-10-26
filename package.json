@@ -1,0 +1,11 @@
+{
+  "name": "hoplon-test",
+  "version": "1.0.0",
+  "description": "A [Hoplon][3] project designed to...well, that part is up to you.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
